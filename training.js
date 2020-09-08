@@ -34,6 +34,11 @@ console.log(yourName);
 // age = Number(age);
 // console.log('Возраст посетителя:', age, 'лет');
 
+// Значение parseInt(показывает число без букв 50px)   и  parseFloat(показывает числа с дробью 1.221)
+// let height = '29px';
+// height = Number.parseInt(height);
+// console.log('высота:', height, 'px');
+
 const name = '«Генератор защитного поля»,';
 const price = 1000;
 console.log('Выбран', name, 'цена за штуку', price, 'кредитов.');
