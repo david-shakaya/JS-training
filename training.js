@@ -21,11 +21,12 @@
  const yourName = confirm("Укажите пожалуйста ваше имя");
 console.log(yourName);
 
-
 *prompt - ВОПРОС К ЮЗЕРУ с полем для ответа 
  const city = prompt("Уrажите ваш город");
 // const height = prompt("Какая длина члена");
 // console.log(height, city);
+
+
 
 */
 
@@ -35,7 +36,7 @@ console.log(yourName);
 // console.log('Возраст посетителя:', age, 'лет');
 
 /* 
-Значение parseInt(показывает число без букв 50px)   и  parseFloat(показывает числа с дробью 1.221)
+Значение parseInt(показывает число без букв: 50px)   и  parseFloat(показывает числа с дробью: 1.221)
 let height = '29px';
 height = Number.parseInt(height);
 console.log('высота:', height, 'px'); */
@@ -66,17 +67,37 @@ console.log(Number(price.toFixed(2))); */
 /*   ----ЗАДАЧА---- 
  -Напиши скрипт который просит пользователя ввести число и степень.
 -Возведи введенное число к степени и выведи результат в консоль. */
-/*    ----РЕШЕНИЕ-----
+// /*    ----РЕШЕНИЕ-----
 let base = prompt('Введи число');
 base = Number(base);
 
 let power = prompt('Введи  СТЕПЕНЬ');
 power = Number(power);
 
-console.log(`Ваш результат: ${base ** power}`); */
+alert(`Ваш результат: ${base ** power}`);
 
-const name = '«Генератор защитного поля»,';
-const price = 1000;
-console.log('Выбран', name, 'цена за штуку', price, 'кредитов.');
+/* Генерация случаного числа от 0 до 1.
+console.log(Math.random());
+ */
 
-console.log('Выбран', name, 'цена за штуку', price * 2, 'кредитов.');
+/* 
+Генерация случайного числа от и до(любые числа) 
+(в данном случае числа будут с дробью пример: 32.2342)
+
+const min = 12;
+const max = 138;
+console.log(Math.random() * (max - min) + min);   */
+
+// Генерация случайного числа БЕЗ ДРОБИ (целое число)
+// Math.round - округляет числа
+
+/* const min = 12;
+const max = 138;
+const result = Math.round(Math.random() * (max - min) + min);
+console.log(result); */
+
+// const name = '«Генератор защитного поля»,';
+// const price = 1000; //
+// console.log('Выбран', name, 'цена за штуку', price, 'кредитов.');
+
+// console.log('Выбран', name, 'цена за штуку', price * 2, 'кредитов.');
