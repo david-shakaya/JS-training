@@ -58,8 +58,25 @@ let price = 1000.12334;
 price = Number(price.toFixed(2));
 console.log(price);
  */
+
+/* Тоже, что и выше но записано еще КОРОЧЕ
+let price = 1000.12334;
+console.log(Number(price.toFixed(2))); */
+
+/*   ----ЗАДАЧА---- 
+ -Напиши скрипт который просит пользователя ввести число и степень.
+-Возведи введенное число к степени и выведи результат в консоль. */
+/*    ----РЕШЕНИЕ-----
+let base = prompt('Введи число');
+base = Number(base);
+
+let power = prompt('Введи  СТЕПЕНЬ');
+power = Number(power);
+
+console.log(`Ваш результат: ${base ** power}`); */
+
 const name = '«Генератор защитного поля»,';
-const price = 1000.12334;
+const price = 1000;
 console.log('Выбран', name, 'цена за штуку', price, 'кредитов.');
 
 console.log('Выбран', name, 'цена за штуку', price * 2, 'кредитов.');
