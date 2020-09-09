@@ -67,14 +67,14 @@ console.log(Number(price.toFixed(2))); */
 /*   ----ЗАДАЧА---- 
  -Напиши скрипт который просит пользователя ввести число и степень.
 -Возведи введенное число к степени и выведи результат в консоль. */
-// /*    ----РЕШЕНИЕ-----
+/*    ----РЕШЕНИЕ-----
 let base = prompt('Введи число');
 base = Number(base);
 
 let power = prompt('Введи  СТЕПЕНЬ');
 power = Number(power);
 
-alert(`Ваш результат: ${base ** power}`);
+console.log(`Ваш результат: ${base ** power}`); */
 
 /* Генерация случаного числа от 0 до 1.
 console.log(Math.random());
@@ -96,8 +96,23 @@ const max = 138;
 const result = Math.round(Math.random() * (max - min) + min);
 console.log(result); */
 
-// const name = '«Генератор защитного поля»,';
-// const price = 1000; //
-// console.log('Выбран', name, 'цена за штуку', price, 'кредитов.');
+const name = '«Генератор защитного поля»,';
+const price = 1000; //
+console.log('Выбран', name, 'цена за штуку', price, 'кредитов.');
 
-// console.log('Выбран', name, 'цена за штуку', price * 2, 'кредитов.');
+console.log('Выбран', name, 'цена за штуку', price * 2, 'кредитов.');
+
+// -------------------------СТРОКИ------------------------------
+
+// Свойство "langht" считает количество символов в строк
+/* const mesage = 'В этой строке 25 символов';
+console.log(mesage.length);
+ */
+
+//  Нормализация метододом "toLowerCase"
+// Меняет буквы с верхнего регистра на нижний
+/* 
+let brand = 'SamSung';
+brand = brand.toLowerCase();
+console.log(brand);
+ */
