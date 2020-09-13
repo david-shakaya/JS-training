@@ -1,11 +1,11 @@
 // const mesage = "hello world";
 // console.log("Жоаень---", mesage);
 
-// const yourName = confirm("Укажите пожалуйста ваше имя");
+// const yourName = confirm('Укажите пожалуйста ваше имя');
 // console.log(yourName);
 
-// const city = prompt("Уrажите ваш город");
-// const height = prompt("Какая длина члена");
+// const city = prompt('Уrажите ваш город');
+// const height = prompt('Какая длина члена');
 // console.log(height, city);
 
 // Проверка на число
@@ -138,7 +138,7 @@ console.log(brand);
 //  Поиск в строке методом includes() - Ищет слово в строке и передает информацию,
 // если есть это слово - "true" если нет "fals".
 
-const blackListeWord1 = 'спам';
+/* const blackListeWord1 = 'спам';
 const blackListeWord2 = 'распродажа';
 
 const string1 = 'Привет, я принц абдул и это не спам, хочешь выиграть милион?';
@@ -153,7 +153,7 @@ console.log('Это распродажа?', string2.toLowerCase().includes(black
 
 console.log('Это спам?', string3.toLowerCase().includes(blackListeWord1));
 console.log('Это распродажа?', string3.toLowerCase().includes(blackListeWord2));
-
+ */
 // ОПЕРАТОРЫ СРАВНЕНИЯ!-Значение равно == . Значение Строгое равенство === . Значение не равно !==.
 /* console.log(4 > 5);
  *
@@ -249,3 +249,29 @@ if (total >= ordered) {
 }
 
  */
+
+let balance = 10000;
+// const payment = 2000;
+
+// console.log(
+//   'Общая стоимость товара',
+//   2000,
+//   'кредитов! Проверяем количество средств на счету',
+// );
+
+// if (balance >= payment) {
+//   console.log('На вашем счету осталось', balance - payment, 'кредитов');
+//   console.log('Операция завершена');
+// } else if (payment > balance) {
+//   console.log('На вашем счету недостаточно кредитов для провидения операции');
+// }
+
+let payment = prompt('На какую сумму покупка?');
+payment = Number(payment);
+alert('Проверяем количество средств на счету');
+if (balance >= payment) {
+  alert(`На вашем счету осталось ${balance - payment} кредитов`);
+  alert('Операция завершена!');
+} else if (payment > balance) {
+  alert('На вашем счету недостаточно кредитов для провидения операции');
+}
