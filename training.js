@@ -249,8 +249,8 @@ if (total >= ordered) {
 }
 
  */
-
-let balance = 10000;
+// --------------Задача ---- Два вариантарешения
+// let balance = 10000;
 // const payment = 2000;
 
 // console.log(
@@ -266,7 +266,7 @@ let balance = 10000;
 //   console.log('На вашем счету недостаточно кредитов для провидения операции');
 // }
 
-let payment = prompt('На какую сумму покупка?');
+/* let payment = prompt('На какую сумму покупка?');
 payment = Number(payment);
 alert('Проверяем количество средств на счету');
 if (balance >= payment) {
@@ -274,4 +274,23 @@ if (balance >= payment) {
   alert('Операция завершена!');
 } else if (payment > balance) {
   alert('На вашем счету недостаточно кредитов для провидения операции');
+} */
+
+// Задача
+
+const min = 500;
+const max = 5000;
+let worker = 20;
+let totalSalari;
+
+for (
+  totalSalari = Math.round(Math.random() * (max - min) + min);
+  totalSalari * worker;
+  totalSalari = worker
+) {
+  console.log(totalSalar);
 }
+
+// let totalSalari = Math.round(Math.random() * (5000 - 500) + 500);
+// totalSalari *= worker;
+// console.log(totalSalari);
