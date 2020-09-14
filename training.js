@@ -251,7 +251,7 @@ if (total >= ordered) {
  */
 // --------------Задача ---- Два вариантарешения
 // let balance = 10000;
-// const payment = 2000;
+// let payment = 2000;
 
 // console.log(
 //   'Общая стоимость товара',
@@ -274,8 +274,8 @@ if (balance >= payment) {
   alert('Операция завершена!');
 } else if (payment > balance) {
   alert('На вашем счету недостаточно кредитов для провидения операции');
-} */
-
+}
+ */
 // Задача
 /*Напиши скрипт который подсчитывает общую сумму зарплат работников
  * Количество работников хранится в переменно worker.
@@ -312,3 +312,17 @@ for (let i = min; i <= max; i += 1) {
 }
 console.log('Сумма всех четных чисел', total);
  */
+
+const totalSpent = 1000;
+let payment = 500;
+let discount = 0;
+
+if (totalSpent > 100 && totalSpent <= 1000) {
+  discount = 2;
+  const result = (totalSpent / 100) * discount;
+  console.log(result);
+}
+
+// var money = 100000;
+// var tallage = 35;
+// var result = money / 100 * tallage; //вычисление процентов
