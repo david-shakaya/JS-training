@@ -277,20 +277,38 @@ if (balance >= payment) {
 } */
 
 // Задача
+/*Напиши скрипт который подсчитывает общую сумму зарплат работников
+ * Количество работников хранится в переменно worker.
+ * Зарплата каждого работника это случайное число от 500 до 5000
+ * Записать сумму в переменную totalSalary и вывести в консоль*/
 
-const min = 500;
-const max = 5000;
-let worker = 20;
-let totalSalari;
+// const min = 500;
+// const max = 5000;
+// const worker = 20;
+// let totalSalary = 0;
 
-for (
-  totalSalari = Math.round(Math.random() * (max - min) + min);
-  totalSalari * worker;
-  totalSalari = worker
-) {
-  console.log(totalSalar);
+// for (let i = 1; i <= worker; i += 1) {       /* <- Цыкл созает как бы нумерацию, от 1 до 20 работника. Генерирует случайную ЗП 20 раз. Цыкл*/
+//   let salary = Math.round(Math.random() * (max - min) + min);
+//   console.log(`Зп  ${i} работника ${salary}`);
+//   totalSalary += salary;
+// }
+
+// console.log(totalSalary);
+
+// ---------------ЗАДАЧА---------
+/* Напиши скрипт который подсчитывает ссумму всехчетных чисел.
+ *Которые входят в диапазон от min до max 
+ *Например если min = 0; max = 5 то диапазон от 0 до 5. В нем
+ два четных числа - 2 и 4 , их сумма 6*/
+/* 
+const min = 0;
+const max = 15;
+let total = 0;
+for (let i = min; i <= max; i += 1) {
+  if (i % 2 === 0) {
+    console.log('Четное ', i);
+    total += i;
+  }
 }
-
-// let totalSalari = Math.round(Math.random() * (5000 - 500) + 500);
-// totalSalari *= worker;
-// console.log(totalSalari);
+console.log('Сумма всех четных чисел', total);
+ */
