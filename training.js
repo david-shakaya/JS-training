@@ -312,17 +312,59 @@ for (let i = min; i <= max; i += 1) {
 }
 console.log('Сумма всех четных чисел', total);
  */
+/*
+ *
+ *-----------------ЗАДАЧА
+ *
+ *Напиши скрипт подсчета суммы покупки со скидкой в зависимости
+ *от потраченной за все время суммы (партнерская програма)
+ *
+ *- Общая сумма потраченного хранится в переменной totalSpent
+ *- Сумма текущего платежа хранится в переменной payment
+ * - Скидка хранится в переменной discount
+ *
+ * - Если потрачено от [100 до 1000) - бронзовый партнер, скидка 2%
+ * - Если потрачено от [1000 до 5000) - бронзовый партнер, скидка 5%
+ * - Если потрачено от (5000) - бронзовый партнер, скидка 10%
+ * - Если потрачено до 100 -не партнер, скидка 0%
+ *-
+ * - В результате вывести сообщение : Оформлен заказ на сумму(сумма)
+ * - со скидкой (скидка)%*/
 
-const totalSpent = 1000;
-let payment = 500;
+/* const totalSpent = 5001;
+let payment = 100;
 let discount = 0;
 
-if (totalSpent > 100 && totalSpent <= 1000) {
+if (totalSpent >= 100 && totalSpent < 1000) {
   discount = 2;
-  const result = (totalSpent / 100) * discount;
-  console.log(result);
-}
+  const result = (payment / 100) * discount;
+  console.log(
+    `Оформлен заказ на сумму ${payment}, со скидкой ${
+      payment - result
+    } кредитов 2%`,
+  );
+} else if (totalSpent >= 1000 && totalSpent <= 5000) {
+  discount = 5;
+  const result = (payment / 100) * discount;
+  console.log(
+    `Оформлен заказ на сумму ${payment}, со скидкой ${
+      payment - result
+    } кредитов 5%`,
+  );
+} else if (totalSpent > 5000) {
+  discount = 10;
+  const result = (payment / 100) * discount;
+  console.log(
+    `Оформлен заказ на сумму ${payment}, со скидкой ${
+      payment - result
+    } кредитов 10%`,
+  );
+} */
 
-// var money = 100000;
-// var tallage = 35;
-// var result = money / 100 * tallage; //вычисление процентов
+// ----ВЫЧИСЛЕНИЕ ПРОЦЕНТОВ ОТ ЧИСЛА
+
+// let payment = 100;
+// let discount = 0;
+
+//   discount = 2;
+//   const result = (payment / 100) * discount; (Вычисление процентов от числа payment)
