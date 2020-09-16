@@ -517,14 +517,15 @@ switch (normalizedCountry) {
 
 let input;
 let total = 0;
-input = Number(input);
 
 do {
-  input = prompt('Введите число');
+  input = Number(prompt('Введите число'));
   total += input;
-} while (input !== null);
+} while (input > null);
 
-console.log('Общая сумма чисел равна', total);
+alert(`Общая сумма чисел равна ${total}`);
+
+// ---------------Из конспекта -----------
 
 /* let total = 0;
 let input;
