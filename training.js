@@ -453,7 +453,7 @@ if (totalPrice === null) {
 Индия - 80 кредитов
 Ямайка - 120 кредитов */
 
-let country = prompt('Укажите страну, для осуществления доставки');
+/* let country = prompt('Укажите страну, для осуществления доставки');
 let price;
 const normalizedCountry = country.toLowerCase();
 
@@ -501,3 +501,45 @@ switch (normalizedCountry) {
   default:
     alert('В вашей стране доставка не доступна');
 }
+ */
+/* -------------------------дз 6
+*
+*
+*
+*Напиши скрипт который просит посетителя ввести число в prompt до тех пор, пока посетитель на нажмет Cancel
+ и каждый раз добавляет введенное значение к общей сумме.
+
+При загрузке страницы пользователю предлагается в prompt ввести число. Ввод добавляется к значению переменной total.
+Операция ввода числа продолжается до тех пор, пока пользователь не нажмет кнопку Cancel в prompt.
+После того как пользователь прекратил ввод нажав кнопку Cancel, показать alert со строкой 'Общая сумма чисел равна [сумма]'.
+
+*/
+
+let input;
+let total = 0;
+input = Number(input);
+
+do {
+  input = prompt('Введите число');
+  total += input;
+} while (input !== null);
+
+console.log('Общая сумма чисел равна', total);
+
+/* let total = 0;
+let input;
+
+do {
+  input = prompt('Number');
+  total = total + input;
+} while (input !== null);
+
+console.log(total + input); */
+
+// let password = '';
+
+// do {
+//   password = prompt('Введите пароль длиннее 4-х символов', '');
+// } while (password.length < 5);
+
+// console.log('Ввели пароль: ', password);
