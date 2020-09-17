@@ -234,21 +234,46 @@ const accessOpen = access1 === 'vip' || access1 === 'pro';
 console.log('Доступ открыт:', accessOpen);
  */
 
-//  ------------Задача из ДЗ---------
+//  ------------Задача из ДЗ-- 2---------
 
 // На складе недостаточно твоаров!".
 // В другом случае выводи сообщение "Заказ оформлен, с вами свяжется менеджер".
-/* 
-const total = 100;
-const ordered = 50;
+/*   */
+// const total = 100;
+// const ordered = 101;
 
-if (total >= ordered) {
-  console.log('Заказ оформлен, с вами свяжется менеджер');
-} else if (ordered > total) {
-  console.log('На складе недостаточно твоаров');
-}
+// if (total >= ordered) {
+//   console.log('Заказ оформлен, с вами свяжется менеджер');
+// } else if (ordered > total) {
+//   console.log('На складе недостаточно твоаров');
+// }
 
+// ----та же задача--РЕШЕНИЕ С ПОМОЩЮ ТЕРНАРНОГО ОПЕРАТОРА
+/* let message =
+  total >= ordered
+    ? 'Заказ оформлен, с вами свяжется менеджер'
+    : 'На складе недостаточно твоаров';
+console.log(message);
  */
+
+/* 
+
+if (invoice = 100) {
+  message = 'Заказ оформлен, с вами свяжется менеджер'
+console.log(message);
+} */
+/* 
+let input;
+let total = 0;
+
+do {
+  input = Number(prompt('Введите число'));
+  total += input;
+} while (input > null);
+
+alert(`Общая сумма чисел равна ${total}`);
+ */
+
 // --------------Задача ---- Два вариантарешения
 // let balance = 10000;
 // let payment = 2000;
@@ -387,16 +412,17 @@ let message;
 // const ADMIN_PASSWORD = 'jqueryismyjam';
 // let message;
 
-// let ps = prompt('Введите пожалуйста ваш пароль');
-// if (ps === ADMIN_PASSWORD) {
+// /* let userPassword = prompt('Введите пожалуйста ваш пароль');
+// if (userPassword === ADMIN_PASSWORD) {
 //   message = 'Добро пожаловать!';
-// } else if (ps === null) {
+// } else if (userPassword === null) {
 //   message = 'Отменено пользователем!';
 // } else {
-//   ps !== ADMIN_PASSWORD;
+//   userPassword !== ADMIN_PASSWORD;
 //   message = 'Доступ запрещен, неверный пароль!';
 // }
-// alert(message);
+// alert(message); */
+/* 
 
 /* -----------------------------Задача номер 4 из ДЗ
 *
@@ -436,7 +462,31 @@ if (totalPrice === null) {
     ' кредитов.',
   );
 }
- */
+*/
+/*  РЕШЕНИЕ ЗАДАЧИ 4 ДЛЯ роБОТА
+const orderPieces = prompt('Какое количество дроидов вы хотите купить?');
+
+const credits = 23580;
+const pricePerDroid = 3000;
+const CANCELED_BY_USER = 'Отменено пользователем!';
+const ACCESS_DENIED = 'Недостаточно средств на счету!';
+
+let totalPrice; /* Используйте вспомогательную переменную totalPrice, которая принимает рассчитанную общую цену заказа.*/
+// let balanceCredit; /*  Используйте вспомогательную переменную balanceCredit, которая принимает разницу между credits и totalPrice.*/
+// let message;
+
+// totalPrice = pricePerDroid * orderPieces;
+// balanceCredit = totalPrice;
+// if (orderPieces === null) {
+//   message = CANCELED_BY_USER;
+// } else if (balanceCredit > credits) {
+//   message = ACCESS_DENIED;
+// } else if (balanceCredit <= credits)
+//   message = `Вы купили ${orderPieces} дроидов, на счету осталось ${
+//     credits - balanceCredit
+//   } кредитов`;
+// console.log(message); */
+
 /* Пользователь может оформить доставку товара к себе в страну, указав ее при посещении страницы в prompt. Учти, пользователь
  может ввести имя страны не только буквами нижнего регистра, а к примеру 'кИтАЙ'.
 
@@ -501,9 +551,60 @@ switch (normalizedCountry) {
   default:
     alert('В вашей стране доставка не доступна');
 }
- */
+----------------------------Решение для АВТОПРОВЕРЩИКА */
+
+// const countryName = КиТай('Укажите страну, для осуществления доставки');
+
+// const CANCELED_BY_USER = 'Отменено пользователем!';
+// const NO_DELIVERY = 'В выбранную страну доставка недоступна.';
+// const CHINA = 'Китай';
+// const AUSTRALIA = 'Австралия';
+// const INDIA = 'Индия';
+// const JAMAICA = 'Ямайка';
+// let message;
+// let price = 0;
+// let country;
+// if (countryName === null) {
+//   message = CANCELED_BY_USER;
+// } else {
+//   country = countryName[0].toUpperCase() + countryName.slice(1).toLowerCase();
+// }
+
+// switch (country) {
+//   case CHINA:
+//     price = 100;
+
+//     break;
+
+//   case AUSTRALIA:
+//     price = 170;
+
+//     break;
+
+//   case INDIA:
+//     price = 80;
+
+//     break;
+
+//   case JAMAICA:
+//     price = 120;
+//     break;
+//   default:
+//     message = NO_DELIVERY;
+// }
+
+// if (message === undefined) {
+//   message = `Доставка в ${country} будет стоить ${price} кредитов`;
+// }
+// console.log(message);
+
+//если countryName
+// console.log(message);
+
 /* -------------------------дз 6
 *
+
+
 *
 *
 *Напиши скрипт который просит посетителя ввести число в prompt до тех пор, пока посетитель на нажмет Cancel
@@ -512,18 +613,6 @@ switch (normalizedCountry) {
 При загрузке страницы пользователю предлагается в prompt ввести число. Ввод добавляется к значению переменной total.
 Операция ввода числа продолжается до тех пор, пока пользователь не нажмет кнопку Cancel в prompt.
 После того как пользователь прекратил ввод нажав кнопку Cancel, показать alert со строкой 'Общая сумма чисел равна [сумма]'.
-
-*/
-
-let input;
-let total = 0;
-
-do {
-  input = Number(prompt('Введите число'));
-  total += input;
-} while (input > null);
-
-alert(`Общая сумма чисел равна ${total}`);
 
 // ---------------Из конспекта -----------
 
